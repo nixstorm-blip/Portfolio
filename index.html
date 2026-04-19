@@ -1,242 +1,221 @@
 <!DOCTYPE html>
-<html lang="fr" data-theme="light">
+<html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio BTS SIO — Prénom NOM</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Work+Sans:wght@300..700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="Portfolio BTS SIO de RAMBEAU Tristan">
+  <title>Portfolio BTS SIO — RAMBEAU Tristan</title>
+  //fonts.googleapis.com">
+  //fonts.gstatic.com" crossorigin>
+  //fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  >
 </head>
 <body>
 
-  <header class="site-header">
-    <div class="header-inner container">
-      <div class="logo">
-        <svg aria-label="Logo" width="32" height="32" viewBox="0 0 32 32" fill="none">
-          <rect width="32" height="32" rx="8" fill="currentColor"/>
-          <text x="16" y="22" text-anchor="middle" font-size="16" font-weight="700" fill="var(--color-bg)" font-family="Work Sans,sans-serif">P</text>
-        </svg>
-        <span>Portfolio BTS SIO</span>
+  <header class="hero">
+    <div class="container">
+      <span class="badge">Portfolio BTS SIO — Session 2026</span>
+      <h1>RAMBEAU Tristan</h1>
+      <p class="subtitle">
+        Centre de formation : Lycée Guy Chauvet<br>
+        Option : SLAM
+      </p>
+
+      <div class="meta">
+        <div class="meta-card">
+          <span class="meta-label">Nom et prénom</span>
+          <span class="meta-value">RAMBEAU Tristan</span>
+        </div>
+        <div class="meta-card">
+          <span class="meta-label">Session</span>
+          <span class="meta-value">2026</span>
+        </div>
+        <div class="meta-card">
+          <span class="meta-label">Centre de formation</span>
+          <span class="meta-value">Lycée Guy Chauvet</span>
+        </div>
+        <div class="meta-card">
+          <span class="meta-label">Option</span>
+          <span class="meta-value">SLAM</span>
+        </div>
       </div>
-      <nav class="main-nav">
-        <a href="#apropos">À propos</a>
-        <a href="#competences">Compétences</a>
-        <a href="#realisations">Réalisations</a>
-        <a href="#synthese">Synthèse</a>
-        <a href="#contact">Contact</a>
-      </nav>
-      <button class="theme-toggle" data-theme-toggle aria-label="Basculer le thème">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-      </button>
     </div>
   </header>
 
-  <section class="hero">
-    <div class="container hero-content">
-      <p class="hero-label">BTS SIO — Option SLAM / SISR · Session 2025</p>
-      <h1 class="hero-title">Prénom <em>NOM</em></h1>
-      <p class="hero-sub">Étudiant·e en informatique passionné·e par le développement.<br>Retrouvez ici mes réalisations et compétences professionnelles.</p>
-      <div class="hero-actions">
-        <a href="#realisations" class="btn btn-primary">Voir mes réalisations</a>
-        <a href="assets/cv.pdf" class="btn btn-ghost" target="_blank" rel="noopener noreferrer">Télécharger mon CV</a>
-      </div>
-    </div>
-  </section>
-
   <main class="container">
 
-    <!-- ===== À PROPOS ===== -->
-    <section id="apropos" class="section">
-      <h2 class="section-title">À propos</h2>
-      <div class="about-grid">
-        <div class="about-text">
-          <p>Présente-toi ici : qui tu es, ta formation, ton centre de formation, ce que tu aimes en informatique, ce que tu recherches.</p>
-          <p>Centre de formation : <strong>À compléter</strong><br>
-             Numéro de candidat : <strong>À compléter</strong><br>
-             Option : <strong>SLAM / SISR</strong></p>
-        </div>
-        <div class="about-meta">
-          <div class="meta-card"><span class="meta-label">Formation</span><span class="meta-value">BTS SIO</span></div>
-          <div class="meta-card"><span class="meta-label">Session</span><span class="meta-value">2023–2025</span></div>
-          <div class="meta-card"><span class="meta-label">Option</span><span class="meta-value">SLAM / SISR</span></div>
-          <div class="meta-card"><span class="meta-label">Ville</span><span class="meta-value">À compléter</span></div>
-        </div>
+    <section>
+      <h2 class="section-title">Présentation</h2>
+      <div class="card">
+        <p>
+          Ce portfolio présente mes différentes réalisations réalisées dans le cadre de ma formation BTS SIO.
+          Il regroupe des travaux effectués en formation, en milieu professionnel et dans des projets personnels,
+          avec les compétences associées à chaque réalisation.
+        </p>
       </div>
     </section>
 
-    <!-- ===== COMPÉTENCES ===== -->
-    <section id="competences" class="section">
-      <h2 class="section-title">Compétences techniques</h2>
-      <div class="skills-grid">
-        <div class="skill-card"><h3>Front-end</h3><ul><li>HTML5 / CSS3</li><li>JavaScript</li><li>Vue.js</li></ul></div>
-        <div class="skill-card"><h3>Back-end</h3><ul><li>PHP / Symfony</li><li>SQL / PostgreSQL</li><li>API REST</li></ul></div>
-        <div class="skill-card"><h3>Systèmes &amp; réseaux</h3><ul><li>Linux / Windows Server</li><li>Active Directory</li><li>TCP/IP, VLAN</li></ul></div>
-        <div class="skill-card"><h3>Outils</h3><ul><li>Git / GitHub</li><li>VS Code</li><li>Méthode agile</li></ul></div>
-      </div>
-    </section>
+    <section>
+      <h2 class="section-title">Réalisations</h2>
 
-    <!-- ===== RÉALISATIONS ===== -->
-    <section id="realisations" class="section">
-      <h2 class="section-title">Réalisations professionnelles</h2>
-      <p class="section-desc">Chaque réalisation est reliée aux compétences du tableau de synthèse BTS SIO.</p>
-
-      <!-- PROJET 1 -->
-      <article class="project-card">
-        <div class="project-header">
-          <span class="project-badge">Projet 1</span>
-          <h3 class="project-title">Nom du projet 1</h3>
-          <p class="project-meta">Période : JJ/MM/AAAA au JJ/MM/AAAA &nbsp;|&nbsp; Stage / Formation</p>
-        </div>
-        <div class="project-body">
-          <div class="project-desc">
-            <h4>Contexte</h4>
-            <p>Décris le contexte : entreprise, mission, environnement technique.</p>
-            <h4>Objectif</h4>
-            <p>Explique ce qu'il fallait faire et pourquoi.</p>
-            <h4>Travail réalisé</h4>
-            <p>Explique précisément ce que <strong>toi</strong> tu as fait.</p>
-            <h4>Technologies</h4>
-            <div class="tech-tags">
-              <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">PHP</span><span class="tag">SQL</span>
-            </div>
-            <div class="project-links">
-              <a href="#" class="btn btn-sm">Dépôt GitHub</a>
-              <a href="#" class="btn btn-sm btn-outline">Documentation</a>
-            </div>
-          </div>
-          <div class="project-proof">
-            <h4>Compétences mobilisées</h4>
-            <div class="competences-grid">
-              <label class="comp-item"><input type="checkbox" checked><span>Gérer le patrimoine informatique</span></label>
-              <label class="comp-item"><input type="checkbox"><span>Répondre aux incidents et demandes d'assistance</span></label>
-              <label class="comp-item"><input type="checkbox" checked><span>Développer la présence en ligne de l'organisation</span></label>
-              <label class="comp-item"><input type="checkbox" checked><span>Travailler en mode projet</span></label>
-              <label class="comp-item"><input type="checkbox"><span>Mettre à disposition un service informatique</span></label>
-              <label class="comp-item"><input type="checkbox" checked><span>Organiser son développement professionnel</span></label>
-            </div>
-            <h4 class="mt-4">Preuves associées</h4>
-            <ul class="proof-list">
-              <li>📷 Capture d'écran de l'application</li>
-              <li>💻 Lien vers le dépôt GitHub</li>
-              <li>📄 Documentation utilisateur (PDF)</li>
-              <li>🗃️ Schéma de base de données</li>
-            </ul>
-          </div>
-        </div>
+      <article class="card">
+        <h3>Mise en place d’un système de ticketing avec GLPI pour la prise en charge et le suivi des incidents techniques</h3>
+        <p>J’ai réalisé un TP sur GLPI afin de découvrir son fonctionnement en tant qu’outil ITSM. J’y ai étudié la gestion des incidents, des demandes de service, ainsi que l’intérêt d’une base de connaissances pour le support informatique.</p>
+        <p>Ensuite, j’ai déployé GLPI sur une machine virtuelle Debian à l’aide de Docker et d’un fichier de>docker-compose.yml</code>. J’ai également testé les comptes créés automatiquement et travaillé sur la gestion des réservations en créant des utilisateurs, en ajoutant du matériel à l’inventaire et en effectuant des réservations selon les droits attribués.</p>
       </article>
 
-      <!-- PROJET 2 (template vide) -->
-      <article class="project-card">
-        <div class="project-header">
-          <span class="project-badge">Projet 2</span>
-          <h3 class="project-title">Nom du projet 2</h3>
-          <p class="project-meta">Période : JJ/MM/AAAA au JJ/MM/AAAA &nbsp;|&nbsp; Stage / Formation</p>
-        </div>
-        <div class="project-body">
-          <div class="project-desc">
-            <h4>Contexte</h4><p>À compléter.</p>
-            <h4>Objectif</h4><p>À compléter.</p>
-            <h4>Travail réalisé</h4><p>À compléter.</p>
-            <h4>Technologies</h4>
-            <div class="tech-tags"><span class="tag">À compléter</span></div>
-          </div>
-          <div class="project-proof">
-            <h4>Compétences mobilisées</h4>
-            <div class="competences-grid">
-              <label class="comp-item"><input type="checkbox"><span>Gérer le patrimoine informatique</span></label>
-              <label class="comp-item"><input type="checkbox"><span>Répondre aux incidents et demandes d'assistance</span></label>
-              <label class="comp-item"><input type="checkbox"><span>Développer la présence en ligne de l'organisation</span></label>
-              <label class="comp-item"><input type="checkbox"><span>Travailler en mode projet</span></label>
-              <label class="comp-item"><input type="checkbox"><span>Mettre à disposition un service informatique</span></label>
-              <label class="comp-item"><input type="checkbox"><span>Organiser son développement professionnel</span></label>
-            </div>
-            <h4 class="mt-4">Preuves associées</h4>
-            <ul class="proof-list"><li>À compléter</li></ul>
-          </div>
-        </div>
+      <article class="card">
+        <h3>Développer la présence en ligne de l’organisation</h3>
+        <p>J’ai échangé avec un professionnel afin de concevoir un trailer du serveur, puis j’ai participé à sa diffusion sur les réseaux sociaux. Cette action avait pour objectif de valoriser l’image du serveur, de renforcer sa visibilité et de susciter l’intérêt des utilisateurs.</p>
+      </article>
+
+      <article class="card">
+        <h3>Suivi de formations en ligne sur OpenClassrooms et FromScratch pour développer mes compétences</h3>
+        <p>J’ai suivi des formations en ligne afin d’approfondir mes connaissances sur les sujets travaillés en cours, notamment en HTML et CSS. Cela m’a permis de consolider mes bases, de revoir certaines notions et de progresser de manière autonome.</p>
+      </article>
+
+      <article class="card">
+        <h3>Prise en main et utilisation des outils et technologies employés par l’entreprise, notamment Git et Symfony</h3>
+        <p>J’ai suivi une formation proposée par l’entreprise afin de prendre en main les outils internes utilisés au quotidien. Cela comprenait notamment l’utilisation d’une carte PKI, qui sert à sécuriser l’accès à certains services et à authentifier l’utilisateur, ainsi que l’utilisation du gestionnaire de mots de passe DAS Password pour stocker et retrouver des identifiants de façon centralisée et sécurisée.</p>
+        <p>Par la suite, j’ai également appris à utiliser Git pour la gestion de version, ainsi que Symfony dans le cadre du développement web.</p>
+      </article>
+
+      <article class="card">
+        <h3>Suivi des tâches, remontée des problèmes et coordination du travail via Jira</h3>
+        <p>J’ai utilisé Jira pour suivre les tâches confiées, signaler les problèmes rencontrés et suivre l’avancement du travail. Cela m’a permis de mieux m’organiser et de participer à la coordination des activités au sein de l’équipe.</p>
+      </article>
+
+      <article class="card">
+        <h3>Gestion et mise à jour du tableau Trello pour le suivi des collaborateurs et des tâches</h3>
+        <p>J’ai participé à l’organisation du travail en mettant à jour le tableau Trello avec les collaborateurs et les différentes tâches à réaliser. Cette activité m’a permis de suivre l’avancement des missions et de mieux structurer le travail collectif.</p>
+      </article>
+
+      <article class="card">
+        <h3>Développement de fonctionnalités sur le serveur Minecraft : gestion de la connexion et des permissions</h3>
+        <p>J’ai travaillé sur des fonctionnalités liées au serveur Minecraft, notamment la gestion de la connexion et des permissions des utilisateurs. Cela m’a permis d’améliorer l’accès au serveur et de mieux contrôler les droits attribués aux différents joueurs ou administrateurs.</p>
+      </article>
+
+      <article class="card">
+        <h3>Gestion de l’infrastructure du serveur via le panneau de l’hébergeur : sauvegardes, fichiers, plugins et accès SFTP</h3>
+        <p>J’ai administré l’infrastructure du serveur à partir du panneau proposé par l’hébergeur. J’ai géré les sauvegardes, les fichiers de configuration, les plugins et l’accès SFTP afin de maintenir le serveur en bon état de fonctionnement et de pouvoir effectuer des modifications si nécessaire.</p>
+      </article>
+
+      <article class="card">
+        <h3>Création d’un serveur Discord pour la gestion de la communauté et la communication</h3>
+        <p>J’ai créé et configuré un serveur Discord pour l’association afin de mettre en place un espace de communication centralisé et facile d’accès pour les membres. J’ai mis en place l’arborescence du serveur en créant plusieurs salons textuels et vocaux selon les usages.</p>
+        <p>J’ai également travaillé sur la gestion des permissions afin d’attribuer les bons rôles aux utilisateurs et de contrôler les accès en fonction des responsabilités de chacun.</p>
       </article>
     </section>
 
-    <!-- ===== TABLEAU DE SYNTHÈSE ===== -->
-    <section id="synthese" class="section">
+    <section>
       <h2 class="section-title">Tableau de synthèse des compétences</h2>
-      <p class="section-desc">Vue d'ensemble conforme à la grille BTS SIO.</p>
       <div class="table-wrapper">
-        <table class="synth-table">
+        <table>
           <thead>
             <tr>
               <th>Réalisation</th>
               <th>Gérer le patrimoine informatique</th>
-              <th>Répondre aux incidents et demandes</th>
-              <th>Développer la présence en ligne</th>
+              <th>Répondre aux incidents et demandes d’assistance et d’évolution</th>
+              <th>Développer la présence en ligne de l’organisation</th>
               <th>Travailler en mode projet</th>
-              <th>Mettre à disposition un service</th>
+              <th>Mettre à disposition des utilisateurs un service informatique</th>
               <th>Organiser son développement professionnel</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td class="real-name">Projet 1 — <em>nom du projet</em></td>
-              <td class="check checked">✓</td>
-              <td class="check"></td>
-              <td class="check checked">✓</td>
-              <td class="check checked">✓</td>
-              <td class="check"></td>
-              <td class="check checked">✓</td>
+              <td>Mise en place d’un système de ticketing avec GLPI</td>
+              <td class="check">✓</td>
+              <td class="check">✓</td>
+              <td></td>
+              <td></td>
+              <td class="check">✓</td>
+              <td></td>
             </tr>
             <tr>
-              <td class="real-name">Projet 2 — <em>à compléter</em></td>
-              <td class="check"></td>
-              <td class="check"></td>
-              <td class="check"></td>
-              <td class="check"></td>
-              <td class="check"></td>
-              <td class="check"></td>
+              <td>Développer la présence en ligne de l’organisation</td>
+              <td></td>
+              <td></td>
+              <td class="check">✓</td>
+              <td></td>
+              <td></td>
+              <td></td>
             </tr>
-            <tr class="row-stage">
-              <td class="real-name">Stage — <em>entreprise, période</em></td>
-              <td class="check"></td>
-              <td class="check"></td>
-              <td class="check"></td>
-              <td class="check"></td>
-              <td class="check"></td>
-              <td class="check"></td>
+            <tr>
+              <td>Suivi de formations en ligne</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td class="check">✓</td>
+            </tr>
+            <tr>
+              <td>Prise en main des outils de l’entreprise</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td class="check">✓</td>
+            </tr>
+            <tr>
+              <td>Suivi des tâches via Jira</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td class="check">✓</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Gestion du tableau Trello</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td class="check">✓</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Développement de fonctionnalités sur le serveur Minecraft</td>
+              <td class="check">✓</td>
+              <td></td>
+              <td></td>
+              <td class="check">✓</td>
+              <td class="check">✓</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Gestion de l’infrastructure du serveur via l’hébergeur</td>
+              <td class="check">✓</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td class="check">✓</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Création d’un serveur Discord pour la communauté</td>
+              <td></td>
+              <td></td>
+              <td class="check">✓</td>
+              <td></td>
+              <td class="check">✓</td>
+              <td></td>
             </tr>
           </tbody>
         </table>
       </div>
     </section>
 
-    <!-- ===== CONTACT ===== -->
-    <section id="contact" class="section">
-      <h2 class="section-title">Contact</h2>
-      <div class="contact-grid">
-        <a href="mailto:tonmail@example.com" class="contact-card">📧 tonmail@example.com</a>
-        <a href="https://github.com/tonpseudo" class="contact-card" target="_blank" rel="noopener noreferrer">💻 github.com/tonpseudo</a>
-        <a href="https://linkedin.com/in/tonprofil" class="contact-card" target="_blank" rel="noopener noreferrer">🔗 linkedin.com/in/tonprofil</a>
-      </div>
-    </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container">Portfolio BTS SIO — Prénom NOM — Session 2025</div>
+  <footer>
+    <div class="container">
+      Portfolio BTS SIO — RAMBEAU Tristan — Session 2026
+    </div>
   </footer>
 
-  <script>
-    (function(){
-      const t=document.querySelector('[data-theme-toggle]'),r=document.documentElement;
-      let d=matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light';
-      r.setAttribute('data-theme',d);
-      if(t)t.addEventListener('click',()=>{
-        d=d==='dark'?'light':'dark';
-        r.setAttribute('data-theme',d);
-        t.innerHTML=d==='dark'
-          ?'<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>'
-          :'<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>';
-      });
-    })();
-  </script>
 </body>
 </html>
