@@ -1,15 +1,16 @@
 :root {
   --bg: #f7f6f2;
-  --surface: #ffffff;
+  --surface: rgba(255, 255, 255, 0.88);
   --surface-2: #f1efe9;
-  --text: #222222;
+  --text: #1f1f1f;
   --muted: #666666;
   --line: #d8d3c8;
   --accent: #01696f;
-  --accent-dark: #0c4e54;
-  --accent-soft: #d9ecea;
-  --radius: 18px;
-  --shadow: 0 12px 32px rgba(0, 0, 0, 0.07);
+  --accent-dark: #0b4f54;
+  --accent-soft: #d8eceb;
+  --title: #111111;
+  --radius: 20px;
+  --shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
   --max: 1100px;
 }
 
@@ -24,9 +25,11 @@ html {
 body {
   margin: 0;
   font-family: "Inter", sans-serif;
-  background: var(--bg);
+  background:
+    radial-gradient(circle at top left, rgba(1, 105, 111, 0.08), transparent 30%),
+    linear-gradient(180deg, #fcfbf9 0%, #f7f6f2 100%);
   color: var(--text);
-  line-height: 1.65;
+  line-height: 1.7;
 }
 
 .container {
@@ -35,27 +38,26 @@ body {
 }
 
 .hero {
-  padding: 4rem 0 3rem;
-  background:
-    radial-gradient(circle at top left, rgba(1, 105, 111, 0.08), transparent 35%),
-    linear-gradient(180deg, #ffffff, #f7f6f2);
+  padding: 4.5rem 0 3rem;
   border-bottom: 1px solid var(--line);
 }
 
 .eyebrow {
   margin: 0 0 1rem;
-  font-size: 0.9rem;
-  font-weight: 700;
+  font-size: 0.85rem;
+  font-weight: 800;
   color: var(--accent);
   text-transform: uppercase;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.12em;
 }
 
 h1 {
   margin: 0;
-  font-size: clamp(2.7rem, 7vw, 5rem);
-  line-height: 1.02;
+  font-family: "Playfair Display", serif;
+  font-size: clamp(3rem, 8vw, 5.5rem);
+  line-height: 0.98;
   letter-spacing: -0.03em;
+  color: var(--title);
 }
 
 .hero-text {
@@ -74,18 +76,19 @@ h1 {
 
 .info-card {
   background: var(--surface);
-  border: 1px solid var(--line);
+  border: 1px solid rgba(31, 31, 31, 0.08);
   border-radius: var(--radius);
   padding: 1rem 1.1rem;
   box-shadow: var(--shadow);
+  backdrop-filter: blur(8px);
 }
 
 .info-label {
   display: block;
-  font-size: 0.8rem;
+  font-size: 0.78rem;
   color: var(--muted);
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.06em;
   margin-bottom: 0.35rem;
 }
 
@@ -99,13 +102,15 @@ section + section {
 
 h2 {
   margin: 0 0 1rem;
-  font-size: 1.7rem;
-  line-height: 1.15;
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  color: var(--title);
 }
 
 .intro-section p {
   max-width: 70ch;
   color: var(--muted);
+  font-size: 1.02rem;
 }
 
 .projects-section {
@@ -115,24 +120,25 @@ h2 {
 
 .project-card {
   background: var(--surface);
-  border: 1px solid var(--line);
+  border: 1px solid rgba(31, 31, 31, 0.08);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
   overflow: hidden;
+  backdrop-filter: blur(10px);
   transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
 }
 
 .project-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.08);
-  border-color: #c9c3b8;
+  transform: translateY(-3px);
+  box-shadow: 0 20px 42px rgba(0, 0, 0, 0.09);
+  border-color: rgba(1, 105, 111, 0.18);
 }
 
 .project-card summary {
   list-style: none;
   cursor: pointer;
   padding: 1.35rem 1.4rem;
-  font-size: 1.1rem;
+  font-size: 1.08rem;
   font-weight: 700;
   display: flex;
   align-items: center;
@@ -144,11 +150,16 @@ h2 {
   display: none;
 }
 
+.project-card summary strong {
+  color: var(--accent-dark);
+  font-weight: 800;
+}
+
 .project-card summary::after {
   content: "+";
   flex-shrink: 0;
-  width: 2rem;
-  height: 2rem;
+  width: 2.2rem;
+  height: 2.2rem;
   display: grid;
   place-items: center;
   border-radius: 999px;
@@ -163,7 +174,7 @@ h2 {
 }
 
 .project-card[open] summary {
-  background: var(--surface-2);
+  background: linear-gradient(180deg, #f8f6f2, #f1efe9);
   border-bottom: 1px solid var(--line);
 }
 
@@ -173,7 +184,8 @@ h2 {
 
 .project-content p {
   margin: 0 0 1rem;
-  color: #333333;
+  color: #313131;
+  font-size: 1rem;
 }
 
 .project-content p:last-child {
@@ -185,12 +197,6 @@ h2 {
   padding: 0.15rem 0.4rem;
   border-radius: 6px;
   font-size: 0.95em;
-}
-
-.tag-line {
-  font-size: 0.95rem;
-  color: var(--accent-dark);
-  font-weight: 600;
 }
 
 @media (max-width: 900px) {
@@ -205,11 +211,17 @@ h2 {
   }
 
   h1 {
-    font-size: clamp(2.2rem, 12vw, 3.4rem);
+    font-size: clamp(2.4rem, 12vw, 3.8rem);
   }
 
-  .hero-text {
-    font-size: 1rem;
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  .hero-text,
+  .intro-section p,
+  .project-content p {
+    font-size: 0.98rem;
   }
 
   .project-card summary {
@@ -219,9 +231,5 @@ h2 {
 
   .project-content {
     padding: 1rem;
-  }
-
-  h2 {
-    font-size: 1.45rem;
   }
 }
