@@ -1,23 +1,242 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr" data-theme="light">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio BTS SIO — Prénom NOM</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Work+Sans:wght@300..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>My Portfolio</h1>
-    </header>
-    <main>
-        <section>
-            <h2>Projects</h2>
-            <p>Welcome to my portfolio! Here are some of my projects.</p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2026 My Portfolio</p>
-    </footer>
+
+  <header class="site-header">
+    <div class="header-inner container">
+      <div class="logo">
+        <svg aria-label="Logo" width="32" height="32" viewBox="0 0 32 32" fill="none">
+          <rect width="32" height="32" rx="8" fill="currentColor"/>
+          <text x="16" y="22" text-anchor="middle" font-size="16" font-weight="700" fill="var(--color-bg)" font-family="Work Sans,sans-serif">P</text>
+        </svg>
+        <span>Portfolio BTS SIO</span>
+      </div>
+      <nav class="main-nav">
+        <a href="#apropos">À propos</a>
+        <a href="#competences">Compétences</a>
+        <a href="#realisations">Réalisations</a>
+        <a href="#synthese">Synthèse</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="theme-toggle" data-theme-toggle aria-label="Basculer le thème">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-content">
+      <p class="hero-label">BTS SIO — Option SLAM / SISR · Session 2025</p>
+      <h1 class="hero-title">Prénom <em>NOM</em></h1>
+      <p class="hero-sub">Étudiant·e en informatique passionné·e par le développement.<br>Retrouvez ici mes réalisations et compétences professionnelles.</p>
+      <div class="hero-actions">
+        <a href="#realisations" class="btn btn-primary">Voir mes réalisations</a>
+        <a href="assets/cv.pdf" class="btn btn-ghost" target="_blank" rel="noopener noreferrer">Télécharger mon CV</a>
+      </div>
+    </div>
+  </section>
+
+  <main class="container">
+
+    <!-- ===== À PROPOS ===== -->
+    <section id="apropos" class="section">
+      <h2 class="section-title">À propos</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>Présente-toi ici : qui tu es, ta formation, ton centre de formation, ce que tu aimes en informatique, ce que tu recherches.</p>
+          <p>Centre de formation : <strong>À compléter</strong><br>
+             Numéro de candidat : <strong>À compléter</strong><br>
+             Option : <strong>SLAM / SISR</strong></p>
+        </div>
+        <div class="about-meta">
+          <div class="meta-card"><span class="meta-label">Formation</span><span class="meta-value">BTS SIO</span></div>
+          <div class="meta-card"><span class="meta-label">Session</span><span class="meta-value">2023–2025</span></div>
+          <div class="meta-card"><span class="meta-label">Option</span><span class="meta-value">SLAM / SISR</span></div>
+          <div class="meta-card"><span class="meta-label">Ville</span><span class="meta-value">À compléter</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== COMPÉTENCES ===== -->
+    <section id="competences" class="section">
+      <h2 class="section-title">Compétences techniques</h2>
+      <div class="skills-grid">
+        <div class="skill-card"><h3>Front-end</h3><ul><li>HTML5 / CSS3</li><li>JavaScript</li><li>Vue.js</li></ul></div>
+        <div class="skill-card"><h3>Back-end</h3><ul><li>PHP / Symfony</li><li>SQL / PostgreSQL</li><li>API REST</li></ul></div>
+        <div class="skill-card"><h3>Systèmes &amp; réseaux</h3><ul><li>Linux / Windows Server</li><li>Active Directory</li><li>TCP/IP, VLAN</li></ul></div>
+        <div class="skill-card"><h3>Outils</h3><ul><li>Git / GitHub</li><li>VS Code</li><li>Méthode agile</li></ul></div>
+      </div>
+    </section>
+
+    <!-- ===== RÉALISATIONS ===== -->
+    <section id="realisations" class="section">
+      <h2 class="section-title">Réalisations professionnelles</h2>
+      <p class="section-desc">Chaque réalisation est reliée aux compétences du tableau de synthèse BTS SIO.</p>
+
+      <!-- PROJET 1 -->
+      <article class="project-card">
+        <div class="project-header">
+          <span class="project-badge">Projet 1</span>
+          <h3 class="project-title">Nom du projet 1</h3>
+          <p class="project-meta">Période : JJ/MM/AAAA au JJ/MM/AAAA &nbsp;|&nbsp; Stage / Formation</p>
+        </div>
+        <div class="project-body">
+          <div class="project-desc">
+            <h4>Contexte</h4>
+            <p>Décris le contexte : entreprise, mission, environnement technique.</p>
+            <h4>Objectif</h4>
+            <p>Explique ce qu'il fallait faire et pourquoi.</p>
+            <h4>Travail réalisé</h4>
+            <p>Explique précisément ce que <strong>toi</strong> tu as fait.</p>
+            <h4>Technologies</h4>
+            <div class="tech-tags">
+              <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">PHP</span><span class="tag">SQL</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn btn-sm">Dépôt GitHub</a>
+              <a href="#" class="btn btn-sm btn-outline">Documentation</a>
+            </div>
+          </div>
+          <div class="project-proof">
+            <h4>Compétences mobilisées</h4>
+            <div class="competences-grid">
+              <label class="comp-item"><input type="checkbox" checked><span>Gérer le patrimoine informatique</span></label>
+              <label class="comp-item"><input type="checkbox"><span>Répondre aux incidents et demandes d'assistance</span></label>
+              <label class="comp-item"><input type="checkbox" checked><span>Développer la présence en ligne de l'organisation</span></label>
+              <label class="comp-item"><input type="checkbox" checked><span>Travailler en mode projet</span></label>
+              <label class="comp-item"><input type="checkbox"><span>Mettre à disposition un service informatique</span></label>
+              <label class="comp-item"><input type="checkbox" checked><span>Organiser son développement professionnel</span></label>
+            </div>
+            <h4 class="mt-4">Preuves associées</h4>
+            <ul class="proof-list">
+              <li>📷 Capture d'écran de l'application</li>
+              <li>💻 Lien vers le dépôt GitHub</li>
+              <li>📄 Documentation utilisateur (PDF)</li>
+              <li>🗃️ Schéma de base de données</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <!-- PROJET 2 (template vide) -->
+      <article class="project-card">
+        <div class="project-header">
+          <span class="project-badge">Projet 2</span>
+          <h3 class="project-title">Nom du projet 2</h3>
+          <p class="project-meta">Période : JJ/MM/AAAA au JJ/MM/AAAA &nbsp;|&nbsp; Stage / Formation</p>
+        </div>
+        <div class="project-body">
+          <div class="project-desc">
+            <h4>Contexte</h4><p>À compléter.</p>
+            <h4>Objectif</h4><p>À compléter.</p>
+            <h4>Travail réalisé</h4><p>À compléter.</p>
+            <h4>Technologies</h4>
+            <div class="tech-tags"><span class="tag">À compléter</span></div>
+          </div>
+          <div class="project-proof">
+            <h4>Compétences mobilisées</h4>
+            <div class="competences-grid">
+              <label class="comp-item"><input type="checkbox"><span>Gérer le patrimoine informatique</span></label>
+              <label class="comp-item"><input type="checkbox"><span>Répondre aux incidents et demandes d'assistance</span></label>
+              <label class="comp-item"><input type="checkbox"><span>Développer la présence en ligne de l'organisation</span></label>
+              <label class="comp-item"><input type="checkbox"><span>Travailler en mode projet</span></label>
+              <label class="comp-item"><input type="checkbox"><span>Mettre à disposition un service informatique</span></label>
+              <label class="comp-item"><input type="checkbox"><span>Organiser son développement professionnel</span></label>
+            </div>
+            <h4 class="mt-4">Preuves associées</h4>
+            <ul class="proof-list"><li>À compléter</li></ul>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- ===== TABLEAU DE SYNTHÈSE ===== -->
+    <section id="synthese" class="section">
+      <h2 class="section-title">Tableau de synthèse des compétences</h2>
+      <p class="section-desc">Vue d'ensemble conforme à la grille BTS SIO.</p>
+      <div class="table-wrapper">
+        <table class="synth-table">
+          <thead>
+            <tr>
+              <th>Réalisation</th>
+              <th>Gérer le patrimoine informatique</th>
+              <th>Répondre aux incidents et demandes</th>
+              <th>Développer la présence en ligne</th>
+              <th>Travailler en mode projet</th>
+              <th>Mettre à disposition un service</th>
+              <th>Organiser son développement professionnel</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="real-name">Projet 1 — <em>nom du projet</em></td>
+              <td class="check checked">✓</td>
+              <td class="check"></td>
+              <td class="check checked">✓</td>
+              <td class="check checked">✓</td>
+              <td class="check"></td>
+              <td class="check checked">✓</td>
+            </tr>
+            <tr>
+              <td class="real-name">Projet 2 — <em>à compléter</em></td>
+              <td class="check"></td>
+              <td class="check"></td>
+              <td class="check"></td>
+              <td class="check"></td>
+              <td class="check"></td>
+              <td class="check"></td>
+            </tr>
+            <tr class="row-stage">
+              <td class="real-name">Stage — <em>entreprise, période</em></td>
+              <td class="check"></td>
+              <td class="check"></td>
+              <td class="check"></td>
+              <td class="check"></td>
+              <td class="check"></td>
+              <td class="check"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact" class="section">
+      <h2 class="section-title">Contact</h2>
+      <div class="contact-grid">
+        <a href="mailto:tonmail@example.com" class="contact-card">📧 tonmail@example.com</a>
+        <a href="https://github.com/tonpseudo" class="contact-card" target="_blank" rel="noopener noreferrer">💻 github.com/tonpseudo</a>
+        <a href="https://linkedin.com/in/tonprofil" class="contact-card" target="_blank" rel="noopener noreferrer">🔗 linkedin.com/in/tonprofil</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">Portfolio BTS SIO — Prénom NOM — Session 2025</div>
+  </footer>
+
+  <script>
+    (function(){
+      const t=document.querySelector('[data-theme-toggle]'),r=document.documentElement;
+      let d=matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light';
+      r.setAttribute('data-theme',d);
+      if(t)t.addEventListener('click',()=>{
+        d=d==='dark'?'light':'dark';
+        r.setAttribute('data-theme',d);
+        t.innerHTML=d==='dark'
+          ?'<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>'
+          :'<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>';
+      });
+    })();
+  </script>
 </body>
 </html>
