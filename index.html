@@ -1,221 +1,192 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Portfolio BTS SIO de RAMBEAU Tristan">
   <title>Portfolio BTS SIO — RAMBEAU Tristan</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <header class="hero">
     <div class="container">
-      <span class="badge">Portfolio BTS SIO — Session 2026</span>
+      <p class="eyebrow">Portfolio BTS SIO — Session 2026</p>
       <h1>RAMBEAU Tristan</h1>
-      <p class="subtitle">
-        Centre de formation : Lycée Guy Chauvet<br>
-        Option : SLAM
+      <p class="hero-text">
+        Étudiant en BTS SIO, option SLAM, au lycée Guy Chauvet.
+        Ce portfolio regroupe plusieurs réalisations menées en formation, en entreprise et dans le cadre de projets personnels.
       </p>
 
-      <div class="meta">
-        <div class="meta-card">
-          <span class="meta-label">Nom et prénom</span>
-          <span class="meta-value">RAMBEAU Tristan</span>
+      <div class="hero-infos">
+        <div class="info-card">
+          <span class="info-label">Centre de formation</span>
+          <strong>Lycée Guy Chauvet</strong>
         </div>
-        <div class="meta-card">
-          <span class="meta-label">Session</span>
-          <span class="meta-value">2026</span>
+        <div class="info-card">
+          <span class="info-label">Option</span>
+          <strong>SLAM</strong>
         </div>
-        <div class="meta-card">
-          <span class="meta-label">Centre de formation</span>
-          <span class="meta-value">Lycée Guy Chauvet</span>
-        </div>
-        <div class="meta-card">
-          <span class="meta-label">Option</span>
-          <span class="meta-value">SLAM</span>
+        <div class="info-card">
+          <span class="info-label">Session</span>
+          <strong>2026</strong>
         </div>
       </div>
     </div>
   </header>
 
-  <main class="container">
-
-    <section>
-      <h2 class="section-title">Présentation</h2>
-      <div class="card">
-        <p>
-          Ce portfolio présente mes différentes réalisations réalisées dans le cadre de ma formation BTS SIO.
-          Il regroupe des travaux effectués en formation, en milieu professionnel et dans des projets personnels,
-          avec les compétences associées à chaque réalisation.
-        </p>
-      </div>
+  <main class="container main-content">
+    <section class="intro-section">
+      <h2>Présentation</h2>
+      <p>
+        Ce portfolio présente mes différentes réalisations dans le cadre de ma formation BTS SIO.
+        Chaque bloc ci-dessous correspond à une activité ou un projet, avec un descriptif plus détaillé accessible en cliquant sur le titre.
+      </p>
     </section>
 
-    <section>
-      <h2 class="section-title">Réalisations</h2>
+    <section class="projects-section">
+      <h2>Réalisations</h2>
 
-      <article class="card">
-        <h3>Mise en place d’un système de ticketing avec GLPI pour la prise en charge et le suivi des incidents techniques</h3>
-        <p>J’ai réalisé un TP sur GLPI afin de découvrir son fonctionnement en tant qu’outil ITSM. J’y ai étudié la gestion des incidents, des demandes de service, ainsi que l’intérêt d’une base de connaissances pour le support informatique.</p>
-        <p>Ensuite, j’ai déployé GLPI sur une machine virtuelle Debian à l’aide de Docker et d’un fichier de>docker-compose.yml</code>. J’ai également testé les comptes créés automatiquement et travaillé sur la gestion des réservations en créant des utilisateurs, en ajoutant du matériel à l’inventaire et en effectuant des réservations selon les droits attribués.</p>
-      </article>
+      <details class="project-card" open>
+        <summary>
+          <span>Mise en place d’un système de ticketing avec GLPI</span>
+        </summary>
+        <div class="project-content">
+          <p>
+            J’ai réalisé un TP sur GLPI afin de découvrir son fonctionnement en tant qu’outil ITSM.
+            J’y ai étudié la gestion des incidents, des demandes de service, ainsi que l’intérêt d’une base de connaissances pour le support informatique.
+          </p>
+          <p>
+            Ensuite, j’ai déployé GLPI sur une machine virtuelle Debian à l’aide de Docker et d’un fichier
+            <code>docker-compose.yml</code>. J’ai également testé les comptes créés automatiquement et travaillé
+            sur la gestion des réservations en créant des utilisateurs, en ajoutant du matériel à l’inventaire et
+            en effectuant des réservations selon les droits attribués.
+          </p>
+          <p class="tag-line">Compétences liées : support, gestion d’un service, mise à disposition d’un outil.</p>
+        </div>
+      </details>
 
-      <article class="card">
-        <h3>Développer la présence en ligne de l’organisation</h3>
-        <p>J’ai échangé avec un professionnel afin de concevoir un trailer du serveur, puis j’ai participé à sa diffusion sur les réseaux sociaux. Cette action avait pour objectif de valoriser l’image du serveur, de renforcer sa visibilité et de susciter l’intérêt des utilisateurs.</p>
-      </article>
+      <details class="project-card">
+        <summary>
+          <span>Développer la présence en ligne de l’organisation</span>
+        </summary>
+        <div class="project-content">
+          <p>
+            J’ai échangé avec un professionnel afin de concevoir un trailer du serveur, puis j’ai participé à sa diffusion sur les réseaux sociaux.
+          </p>
+          <p>
+            Cette action avait pour objectif de valoriser l’image du serveur, de renforcer sa visibilité et de susciter l’intérêt des utilisateurs.
+            Elle m’a permis de contribuer à la communication numérique autour du projet.
+          </p>
+        </div>
+      </details>
 
-      <article class="card">
-        <h3>Suivi de formations en ligne sur OpenClassrooms et FromScratch pour développer mes compétences</h3>
-        <p>J’ai suivi des formations en ligne afin d’approfondir mes connaissances sur les sujets travaillés en cours, notamment en HTML et CSS. Cela m’a permis de consolider mes bases, de revoir certaines notions et de progresser de manière autonome.</p>
-      </article>
+      <details class="project-card">
+        <summary>
+          <span>Suivi de formations en ligne sur OpenClassrooms et FromScratch</span>
+        </summary>
+        <div class="project-content">
+          <p>
+            J’ai suivi des formations en ligne afin d’approfondir mes connaissances sur les sujets travaillés en cours,
+            notamment en HTML et CSS.
+          </p>
+          <p>
+            Cela m’a permis de consolider mes bases, de revoir certaines notions et de progresser de manière autonome.
+          </p>
+        </div>
+      </details>
 
-      <article class="card">
-        <h3>Prise en main et utilisation des outils et technologies employés par l’entreprise, notamment Git et Symfony</h3>
-        <p>J’ai suivi une formation proposée par l’entreprise afin de prendre en main les outils internes utilisés au quotidien. Cela comprenait notamment l’utilisation d’une carte PKI, qui sert à sécuriser l’accès à certains services et à authentifier l’utilisateur, ainsi que l’utilisation du gestionnaire de mots de passe DAS Password pour stocker et retrouver des identifiants de façon centralisée et sécurisée.</p>
-        <p>Par la suite, j’ai également appris à utiliser Git pour la gestion de version, ainsi que Symfony dans le cadre du développement web.</p>
-      </article>
+      <details class="project-card">
+        <summary>
+          <span>Prise en main des outils de l’entreprise, notamment Git et Symfony</span>
+        </summary>
+        <div class="project-content">
+          <p>
+            J’ai suivi une formation proposée par l’entreprise afin de prendre en main les outils internes utilisés au quotidien.
+            Cela comprenait notamment l’utilisation d’une carte PKI, servant à sécuriser l’accès à certains services et à authentifier l’utilisateur,
+            ainsi que l’utilisation du gestionnaire de mots de passe DAS Password.
+          </p>
+          <p>
+            Par la suite, j’ai également appris à utiliser Git pour la gestion de version, ainsi que Symfony dans le cadre du développement web.
+          </p>
+        </div>
+      </details>
 
-      <article class="card">
-        <h3>Suivi des tâches, remontée des problèmes et coordination du travail via Jira</h3>
-        <p>J’ai utilisé Jira pour suivre les tâches confiées, signaler les problèmes rencontrés et suivre l’avancement du travail. Cela m’a permis de mieux m’organiser et de participer à la coordination des activités au sein de l’équipe.</p>
-      </article>
+      <details class="project-card">
+        <summary>
+          <span>Suivi des tâches, remontée des problèmes et coordination du travail via Jira</span>
+        </summary>
+        <div class="project-content">
+          <p>
+            J’ai utilisé Jira pour suivre les tâches confiées, signaler les problèmes rencontrés et suivre l’avancement du travail.
+          </p>
+          <p>
+            Cela m’a permis de mieux m’organiser et de participer à la coordination des activités au sein de l’équipe.
+          </p>
+        </div>
+      </details>
 
-      <article class="card">
-        <h3>Gestion et mise à jour du tableau Trello pour le suivi des collaborateurs et des tâches</h3>
-        <p>J’ai participé à l’organisation du travail en mettant à jour le tableau Trello avec les collaborateurs et les différentes tâches à réaliser. Cette activité m’a permis de suivre l’avancement des missions et de mieux structurer le travail collectif.</p>
-      </article>
+      <details class="project-card">
+        <summary>
+          <span>Gestion et mise à jour du tableau Trello</span>
+        </summary>
+        <div class="project-content">
+          <p>
+            J’ai participé à l’organisation du travail en mettant à jour le tableau Trello avec les collaborateurs et les différentes tâches à réaliser.
+          </p>
+          <p>
+            Cette activité m’a permis de suivre l’avancement des missions et de mieux structurer le travail collectif.
+          </p>
+        </div>
+      </details>
 
-      <article class="card">
-        <h3>Développement de fonctionnalités sur le serveur Minecraft : gestion de la connexion et des permissions</h3>
-        <p>J’ai travaillé sur des fonctionnalités liées au serveur Minecraft, notamment la gestion de la connexion et des permissions des utilisateurs. Cela m’a permis d’améliorer l’accès au serveur et de mieux contrôler les droits attribués aux différents joueurs ou administrateurs.</p>
-      </article>
+      <details class="project-card">
+        <summary>
+          <span>Développement de fonctionnalités sur le serveur Minecraft</span>
+        </summary>
+        <div class="project-content">
+          <p>
+            J’ai travaillé sur des fonctionnalités liées au serveur Minecraft, notamment la gestion de la connexion et des permissions des utilisateurs.
+          </p>
+          <p>
+            Cela m’a permis d’améliorer l’accès au serveur et de mieux contrôler les droits attribués aux différents joueurs ou administrateurs.
+          </p>
+        </div>
+      </details>
 
-      <article class="card">
-        <h3>Gestion de l’infrastructure du serveur via le panneau de l’hébergeur : sauvegardes, fichiers, plugins et accès SFTP</h3>
-        <p>J’ai administré l’infrastructure du serveur à partir du panneau proposé par l’hébergeur. J’ai géré les sauvegardes, les fichiers de configuration, les plugins et l’accès SFTP afin de maintenir le serveur en bon état de fonctionnement et de pouvoir effectuer des modifications si nécessaire.</p>
-      </article>
+      <details class="project-card">
+        <summary>
+          <span>Gestion de l’infrastructure du serveur via le panneau de l’hébergeur</span>
+        </summary>
+        <div class="project-content">
+          <p>
+            J’ai administré l’infrastructure du serveur à partir du panneau proposé par l’hébergeur.
+            J’ai géré les sauvegardes, les fichiers de configuration, les plugins et l’accès SFTP.
+          </p>
+          <p>
+            Cela m’a permis de maintenir le serveur en bon état de fonctionnement et de pouvoir effectuer des modifications si nécessaire.
+          </p>
+        </div>
+      </details>
 
-      <article class="card">
-        <h3>Création d’un serveur Discord pour la gestion de la communauté et la communication</h3>
-        <p>J’ai créé et configuré un serveur Discord pour l’association afin de mettre en place un espace de communication centralisé et facile d’accès pour les membres. J’ai mis en place l’arborescence du serveur en créant plusieurs salons textuels et vocaux selon les usages.</p>
-        <p>J’ai également travaillé sur la gestion des permissions afin d’attribuer les bons rôles aux utilisateurs et de contrôler les accès en fonction des responsabilités de chacun.</p>
-      </article>
+      <details class="project-card">
+        <summary>
+          <span>Création d’un serveur Discord pour la gestion de la communauté</span>
+        </summary>
+        <div class="project-content">
+          <p>
+            J’ai créé et configuré un serveur Discord pour l’association afin de mettre en place un espace de communication centralisé et facile d’accès pour les membres.
+          </p>
+          <p>
+            J’ai également travaillé sur la gestion des permissions afin d’attribuer les bons rôles aux utilisateurs et de contrôler les accès en fonction des responsabilités de chacun.
+          </p>
+        </div>
+      </details>
     </section>
-
-    <section>
-      <h2 class="section-title">Tableau de synthèse des compétences</h2>
-      <div class="table-wrapper">
-        <table>
-          <thead>
-            <tr>
-              <th>Réalisation</th>
-              <th>Gérer le patrimoine informatique</th>
-              <th>Répondre aux incidents et demandes d’assistance et d’évolution</th>
-              <th>Développer la présence en ligne de l’organisation</th>
-              <th>Travailler en mode projet</th>
-              <th>Mettre à disposition des utilisateurs un service informatique</th>
-              <th>Organiser son développement professionnel</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Mise en place d’un système de ticketing avec GLPI</td>
-              <td class="check">✓</td>
-              <td class="check">✓</td>
-              <td></td>
-              <td></td>
-              <td class="check">✓</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>Développer la présence en ligne de l’organisation</td>
-              <td></td>
-              <td></td>
-              <td class="check">✓</td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>Suivi de formations en ligne</td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td class="check">✓</td>
-            </tr>
-            <tr>
-              <td>Prise en main des outils de l’entreprise</td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td class="check">✓</td>
-            </tr>
-            <tr>
-              <td>Suivi des tâches via Jira</td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td class="check">✓</td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>Gestion du tableau Trello</td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td class="check">✓</td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>Développement de fonctionnalités sur le serveur Minecraft</td>
-              <td class="check">✓</td>
-              <td></td>
-              <td></td>
-              <td class="check">✓</td>
-              <td class="check">✓</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>Gestion de l’infrastructure du serveur via l’hébergeur</td>
-              <td class="check">✓</td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td class="check">✓</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>Création d’un serveur Discord pour la communauté</td>
-              <td></td>
-              <td></td>
-              <td class="check">✓</td>
-              <td></td>
-              <td class="check">✓</td>
-              <td></td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
-
   </main>
-
-  <footer>
-    <div class="container">
-      Portfolio BTS SIO — RAMBEAU Tristan — Session 2026
-    </div>
-  </footer>
 
 </body>
 </html>
